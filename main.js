@@ -26,28 +26,29 @@ document.querySelector('#user-icon').onclick = () =>{
     cart.classList.remove('active');
     search.classList.remove('active');
 }
+document.addEventListener('DOMContentLoaded', function() {
+    var swiper = new Swiper(".new-arrival", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop:true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        breakpoints: {
+        0: {
+            slidesPerView: 1,
 
- var swiper = new Swiper(".new-arrival", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      loop:true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      centeredSlides: true,
-      breakpoints: {
-      0: {
-        slidesPerView: 0,
-
-      },
-      568: {
-        slidesPerView: 2,
+        },
+        568: {
+            slidesPerView: 2,
 
 
-      },
-      768: {
-        slidesPerView:3,
-      },
-    },
+        },
+        768: {
+            slidesPerView:3,
+        },
+        },
+    });
 });
