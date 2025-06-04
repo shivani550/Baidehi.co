@@ -30,16 +30,24 @@ document.querySelector('#user-icon').onclick = () =>{
  var swiper = new Swiper(".new-arrival", {
       spaceBetween: 30,
       centeredSlides: true,
+      loop:true,
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      centeredSlides: true,
+      breakpoints: {
+      0: {
+        slidesPerView: 0,
+
       },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      568: {
+        slidesPerView: 2,
+
+
       },
-    });
+      768: {
+        slidesPerView:3,
+      },
+    },
+});
