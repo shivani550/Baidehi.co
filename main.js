@@ -26,40 +26,8 @@ document.querySelector('#user-icon').onclick = () =>{
     cart.classList.remove('active');
     search.classList.remove('active');
 }
-/*var swiper = new Swiper(".new-arrival", {
-    spaceBetween: 20,
-    loop:true,
-    centeredSlides: true,
-    autoplay:{
-        delay: 5500,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 0,
-        },
-        568: {
-            slidesPerView: 2,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1020:{
-            slidesPerView: 3,
-        },
-    
 
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl:".swiper-button-next",
-        prevEl:".swiper-button-prev",
-    },
-});*/
- var swiper = new Swiper(".mySwiper", {
+ var swiper = new Swiper(".new-arrival", {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
