@@ -28,27 +28,34 @@ document.querySelector('#user-icon').onclick = () =>{
 }
 document.addEventListener('DOMContentLoaded', function() {
     var swiper = new Swiper(".new-arrival", {
+        slidesPerView: 3,
         spaceBetween: 30,
-        centeredSlides: true,
-        loop:true,
+        loop: true,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
         },
-        centeredSlides: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         breakpoints: {
-        0: {
-            slidesPerView: 1,
-
-        },
-        568: {
-            slidesPerView: 2,
-
-
-        },
-        768: {
-            slidesPerView:3,
-        },
-        },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            568: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            }
+        }
     });
 });
